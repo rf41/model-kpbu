@@ -49,3 +49,4 @@ build/
 # === Mypy ===
 .mypy_cache/
 .dmypy.json
+.next
