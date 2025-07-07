@@ -1,0 +1,11 @@
+ID_Proyek,Nama_Proyek,Sektor_Proyek,Status_Proyek,Durasi_Konsesi_Tahun,Nilai_Investasi_Total_IDR,Target_Dana_Tokenisasi_IDR,Persentase_Tokenisasi,Jenis_Token_Utama,Token_Risk_Level_Ordinal,Token_Ada_Jaminan_Pokok,Token_Return_Berbasis_Kinerja,Dok_Studi_Kelayakan,Dok_Laporan_Keuangan_Audit,Dok_Peringkat_Kredit
+PRED01,Tol Trans-Kalimantan Ruas Pontianak-Singkawang,Jalan & Jembatan,Studi Kelayakan,35,14000000000000,7000000000000,0.5,Hibrida,2,1,1,1,0,0
+PRED02,Pembangunan RSUD Ibu Kota Nusantara,Kesehatan,Pra-Studi Kelayakan,30,9500000000000,6650000000000,0.7,Ekuitas,4,0,1,0,0,0
+PRED03,Sistem Penyediaan Air Minum (SPAM) Kota Cirebon,Air & Sanitasi,Konstruksi,25,1800000000000,540000000000,0.3,Utang,1,1,0,1,0,1
+PRED04,Jaringan Listrik Desa Terpencil Maluku,Energi,Operasi,20,890000000000,89000000000,0.1,Utang,1,1,0,1,1,1
+PRED05,Pusat Data Nasional (PDN) Batam,Telekomunikasi,Konstruksi,22,4500000000000,2700000000000,0.6,Ekuitas,4,0,1,1,0,0
+PRED06,Kereta Gantung Rinjani Lombok,Transportasi,Studi Kelayakan,28,3200000000000,1920000000000,0.6,Hak Pendapatan,3,0,1,1,0,0
+PRED07,Pengembangan Kampus Unpad Jatinangor,Pendidikan,Operasi,30,950000000000,285000000000,0.3,Hibrida,2,1,1,1,1,0
+PRED08,Tol Akses Bandara Kualanamu,Jalan & Jembatan,Operasi,25,2100000000000,210000000000,0.1,Utang,1,1,0,1,1,1
+PRED09,Proyek Geothermal Gunung Lawu,Energi,Pra-Studi Kelayakan,35,11000000000000,7700000000000,0.7,Ekuitas,4,0,1,0,0,0
+PRED10,Laboratorium Riset Halal Terpadu,Pendidikan,Konstruksi,20,1500000000000,450000000000,0.3,Hibrida,2,1,1,1,0,1

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="27.2.0">
+  <diagram name="Alur Rekomendasi Investor" id="rtR2q_ss_gheRYOTlvSf">
+    <mxGraphModel dx="1502" dy="934" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EPbIA_ylhQyTCVLdWZMR-1" value="Arsitektur Chatbot Interaktif Berbasis Retrieval-Augmented Generation (RAG)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="440" y="20" width="520" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EPbIA_ylhQyTCVLdWZMR-2" value="Investor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="80" y="320" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EPbIA_ylhQyTCVLdWZMR-3" value="Chatbot UI" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="200" y="310" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EPbIA_ylhQyTCVLdWZMR-4" value="Mengajukan Pertanyaan" style="endArrow=classic;html=1;rounded=0;" parent="1" source="EPbIA_ylhQyTCVLdWZMR-2" target="EPbIA_ylhQyTCVLdWZMR-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="130" y="350" as="sourcePoint" />
+            <mxPoint x="180" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPbIA_ylhQyTCVLdWZMR-5" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="80" width="850" height="640" as="geometry" />
+        </mxCell>
+        <mxCell id="EPbIA_ylhQyTCVLdWZMR-6" value="SISTEM RAG (BACKEND)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="410" y="90" width="940" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EPbIA_ylhQyTCVLdWZMR-7" value="Pertanyaan Investor" style="endArrow=classic;html=1;rounded=0;" parent="1" source="EPbIA_ylhQyTCVLdWZMR-3" target="EPbIA_ylhQyTCVLdWZMR-8" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="350" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPbIA_ylhQyTCVLdWZMR-8" value="&lt;b&gt;3. Retrieval&lt;/b&gt;&lt;br&gt;Cari informasi relevan di Vector DB berdasarkan pertanyaan &amp;amp; konteks sesi." style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="460" y="300" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="EPbIA_ylhQyTCVLdWZMR-9" value="&lt;b&gt;4. Augmentation&lt;/b&gt;&lt;br&gt;Gabungkan pertanyaan asli dengan konteks yang ditemukan untuk membuat prompt baru." style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="750" y="300" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="EPbIA_ylhQyTCVLdWZMR-10" value="&lt;b&gt;5. Generation&lt;/b&gt;&lt;br&gt;Kirim prompt ke LLM (Gemini) untuk menghasilkan jawaban." style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="1040" y="300" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="EPbIA_ylhQyTCVLdWZMR-11" value="Konteks Relevan" style="endArrow=classic;html=1;rounded=0;" parent="1" source="EPbIA_ylhQyTCVLdWZMR-8" target="EPbIA_ylhQyTCVLdWZMR-9" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="640" y="350" as="sourcePoint" />
+            <mxPoint x="700" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPbIA_ylhQyTCVLdWZMR-12" value="Augmented Prompt" style="endArrow=classic;html=1;rounded=0;" parent="1" source="EPbIA_ylhQyTCVLdWZMR-9" target="EPbIA_ylhQyTCVLdWZMR-10" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="900" y="350" as="sourcePoint" />
+            <mxPoint x="960" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPbIA_ylhQyTCVLdWZMR-13" value="Jawaban Final" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="EPbIA_ylhQyTCVLdWZMR-10" target="EPbIA_ylhQyTCVLdWZMR-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1160" y="350" as="sourcePoint" />
+            <mxPoint x="340" y="350" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1120" y="450" />
+              <mxPoint x="260" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPbIA_ylhQyTCVLdWZMR-14" value="Vector Database" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="700" y="520" width="120" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="EPbIA_ylhQyTCVLdWZMR-15" value="Query" style="edgeStyle=orthogonalEdgeStyle;elbow=horizontal;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=42.5;entryPerimeter=0;" parent="1" source="EPbIA_ylhQyTCVLdWZMR-8" target="EPbIA_ylhQyTCVLdWZMR-14" edge="1">
+          <mxGeometry x="-0.3178" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="420" as="sourcePoint" />
+            <mxPoint x="590" y="370" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="540" y="562" />
+            </Array>
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPbIA_ylhQyTCVLdWZMR-16" value="Hasil Pencarian" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=classic;html=1;rounded=0;" parent="1" source="EPbIA_ylhQyTCVLdWZMR-14" target="EPbIA_ylhQyTCVLdWZMR-8" edge="1">
+          <mxGeometry x="0.25" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="660" y="520" as="sourcePoint" />
+            <mxPoint x="600" y="420" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="520" y="460" />
+              <mxPoint x="600" y="460" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPbIA_ylhQyTCVLdWZMR-17" value="Data Proyek (dari DB)" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" parent="1" vertex="1">
+          <mxGeometry x="910" y="490" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EPbIA_ylhQyTCVLdWZMR-18" value="Dokumen Proyek (PDF, DOCX)" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" parent="1" vertex="1">
+          <mxGeometry x="910" y="630" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EPbIA_ylhQyTCVLdWZMR-19" value="FAQ Umum KPBU" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" parent="1" vertex="1">
+          <mxGeometry x="1040" y="570" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EPbIA_ylhQyTCVLdWZMR-20" value="Embedding" style="endArrow=classic;html=1;rounded=0;dashed=1;" parent="1" source="EPbIA_ylhQyTCVLdWZMR-17" target="EPbIA_ylhQyTCVLdWZMR-14" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="840" y="560" as="sourcePoint" />
+            <mxPoint x="810" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPbIA_ylhQyTCVLdWZMR-21" value="Embedding" style="endArrow=classic;html=1;rounded=0;dashed=1;" parent="1" source="EPbIA_ylhQyTCVLdWZMR-18" target="EPbIA_ylhQyTCVLdWZMR-14" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="840" y="660" as="sourcePoint" />
+            <mxPoint x="810" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPbIA_ylhQyTCVLdWZMR-22" value="Embedding" style="endArrow=classic;html=1;rounded=0;dashed=1;" parent="1" source="EPbIA_ylhQyTCVLdWZMR-19" target="EPbIA_ylhQyTCVLdWZMR-14" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1000" y="610" as="sourcePoint" />
+            <mxPoint x="830" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPbIA_ylhQyTCVLdWZMR-23" value="&lt;b&gt;1. Inisiasi Sesi&lt;/b&gt;&lt;br&gt;Panggil Model 2 (Matchmaker) untuk mendapatkan Top 5 Proyek" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="460" y="140" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="EPbIA_ylhQyTCVLdWZMR-24" value="&lt;b&gt;2. Set Konteks Sesi&lt;/b&gt;&lt;br&gt;[ID_Proyek1, ID_Proyek2, ...]" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=15;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="710" y="140" width="140" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="EPbIA_ylhQyTCVLdWZMR-25" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="EPbIA_ylhQyTCVLdWZMR-23" target="EPbIA_ylhQyTCVLdWZMR-24" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="630" y="195" as="sourcePoint" />
+            <mxPoint x="650" y="195" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPbIA_ylhQyTCVLdWZMR-26" value="Membatasi Pencarian" style="endArrow=classic;html=1;rounded=0;dashed=1;" parent="1" source="EPbIA_ylhQyTCVLdWZMR-24" target="EPbIA_ylhQyTCVLdWZMR-8" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="730" y="260" as="sourcePoint" />
+            <mxPoint x="540" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
