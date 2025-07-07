@@ -1,0 +1,29 @@
+Contoh Dokumen Proyek KPBU
+
+Proyek: Pembangunan Jalan Tol Jakarta-Bandung
+ID_Proyek: KPBU-001
+
+Deskripsi Proyek:
+Proyek ini merupakan kerjasama pemerintah dan badan usaha untuk membangun jalan tol yang menghubungkan Jakarta dan Bandung. Proyek ini diharapkan dapat meningkatkan konektivitas dan mengurangi waktu tempuh perjalanan antara kedua kota.
+
+Nilai Investasi: Rp 50 Triliun
+Durasi Proyek: 5 tahun
+Status: Dalam Tahap Perencanaan
+
+Risiko yang Diidentifikasi:
+1. Risiko konstruksi
+2. Risiko perubahan regulasi
+3. Risiko fluktuasi nilai tukar
+4. Risiko permintaan traffic
+
+Profil Investor yang Dibutuhkan:
+- Pengalaman minimal 10 tahun di bidang infrastruktur
+- Kemampuan finansial minimal Rp 15 Triliun
+- Memiliki track record yang baik
+- Mampu berkomitmen jangka panjang
+
+Strategi Mitigasi Risiko:
+1. Implementasi sistem manajemen risiko yang komprehensif
+2. Diversifikasi sumber pendanaan
+3. Asuransi konstruksi dan operasional
+4. Hedging untuk risiko nilai tukar
