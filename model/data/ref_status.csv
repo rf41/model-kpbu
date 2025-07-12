@@ -1,0 +1,8 @@
+status_name,id_status
+Perencanaan,1
+Penyiapan,2
+Lelang,3
+Penandatanganan dan Pembiayaan,5
+Konstruksi,6
+Operasi,7
+Akhir Proyek,8

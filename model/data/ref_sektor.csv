@@ -1,0 +1,22 @@
+sektor_name,id_sektor,risk_rank
+Air minum,1,5
+"Bangunan negara antara lain gedung perkantoran, rumah negara dan sarana pendukung lainnya",9,11
+"Fasilitas pendidikan, penelitian dan pengembangan",6,13
+Fasilitas perkotaan,17,10
+"Fasilitas sarana olahraga, kesenian dan budaya",20,10
+Infrastruktur,2,8
+Jalan,3,2
+Kawasan,18,7
+Kesehatan,4,13
+Ketenagalistrikan,5,6
+Konservasi energi,11,14
+Minyak dan gas bumi dan energi terbarukan termasuk bio energi,16,1
+Pariwisata,19,9
+Pemasyarakatan,10,12
+Perumahan rakyat,21,7
+Sistem pengelolaan air limbah setempat,14,5
+Sistem pengelolaan air limbah terpusat,13,5
+Sistem pengelolaan persampahan dan/atau limbah bahan berbahaya dan beracun,15,4
+Sumber daya air dan irigasi,12,5
+Telekomunikasi dan informatika,7,3
+Transportasi,8,2
