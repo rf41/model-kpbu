@@ -1,0 +1,117 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="27.2.0">
+  <diagram name="Arsitektur AI Profesional" id="mNoPqRsTuVwXyZaBcD">
+    <mxGraphModel dx="1394" dy="867" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Arsitektur Teknis Komponen AI Assistant" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="490" y="20" width="620" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="backend-container" value="Backend Platform" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;fontStyle=1;fontSize=14;verticalAlign=top;align=left;spacingLeft=10;" parent="1" vertex="1">
+          <mxGeometry x="40" y="80" width="1520" height="880" as="geometry" />
+        </mxCell>
+        <mxCell id="core-services" value="Core Services" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;fontStyle=1;fontSize=12;verticalAlign=top;align=left;spacingLeft=10;" parent="1" vertex="1">
+          <mxGeometry x="80" y="140" width="200" height="780" as="geometry" />
+        </mxCell>
+        <mxCell id="api" value="API Gateway" style="shape=datastore;whiteSpace=wrap;html=1;fontSize=14;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="140" y="270" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="database" value="Database&lt;br&gt;(PostgreSQL)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontSize=14;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="120" y="600" width="120" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-agents-container" value="AI Agents" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=14;verticalAlign=top;align=left;spacingLeft=10;" parent="1" vertex="1">
+          <mxGeometry x="320" y="140" width="1200" height="780" as="geometry" />
+        </mxCell>
+        <mxCell id="model1-box" value="&lt;b style=&quot;font-size: 14px;&quot;&gt;Model 1: Risk Profiling Engine&lt;/b&gt;&lt;br&gt;&lt;i&gt;Teknik: Random Forest Classifier&lt;/i&gt;&lt;br&gt;&lt;hr&gt;&lt;p style=&quot;margin: 4px;&quot;&gt;Menganalisis data proyek baru dan secara otomatis menghasilkan &lt;b&gt;label risiko&lt;/b&gt; (Rendah, Menengah, Tinggi).&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;verticalAlign=top;spacing=10;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="370" y="150" width="320" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="model2-box" value="&lt;b style=&quot;font-size: 14px;&quot;&gt;Model 2: Investor Matchmaker&lt;/b&gt;&lt;br&gt;&lt;i&gt;Teknik: Hybrid (Rule-Based + Content-Based)&lt;/i&gt;&lt;br&gt;&lt;hr&gt;&lt;p style=&quot;margin: 4px;&quot;&gt;Mencocokkan &lt;b&gt;profil investor&lt;/b&gt; dengan proyek yang tersedia di database untuk menghasilkan &lt;b&gt;Top 5 rekomendasi&lt;/b&gt;.&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;verticalAlign=top;spacing=10;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="370" y="330" width="320" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="model3-box" value="&lt;b style=&quot;font-size: 14px;&quot;&gt;Model 3: Conversational AI Assistant&lt;/b&gt;&lt;br&gt;&lt;i&gt;Teknik: Retrieval-Augmented Generation (RAG)&lt;/i&gt;&lt;br&gt;&lt;hr&gt;&lt;p style=&quot;margin: 4px;&quot;&gt;Menjawab pertanyaan investor secara kontekstual, menggunakan data dari &lt;b&gt;Vector DB&lt;/b&gt; dan kemampuan reasoning dari &lt;b&gt;LLM&lt;/b&gt;.&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;verticalAlign=top;spacing=10;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="360" y="620" width="320" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow-api-m1" value="1. Request: Create Project" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="model1-box" target="api" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="250" as="sourcePoint" />
+            <mxPoint x="230" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow-m1-db" value="2. Simpan `Profil_Risiko`" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="database" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="250" as="sourcePoint" />
+            <mxPoint x="20" y="540" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="280" y="251" />
+              <mxPoint x="280" y="480" />
+              <mxPoint x="180" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow-api-m2" value="3. Request: Get Recommendations" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="model2-box" target="api" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="480" as="sourcePoint" />
+            <mxPoint x="230" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow-db-m2" value="4. Ambil Daftar Proyek" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=1;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="database" target="model2-box" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="580" as="sourcePoint" />
+            <mxPoint x="350" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow-m2-api" value="5. Response: Top 5 Proyek" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="model2-box" target="api" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="520" y="580" as="sourcePoint" />
+            <mxPoint x="180" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow-api-m3" value="6. Request: Chat" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="model3-box" target="api" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="700" as="sourcePoint" />
+            <mxPoint x="230" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow-m3-api" value="10. Response: Jawaban Chat" style="endArrow=classic;html=1;rounded=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="model3-box" target="api" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="520" y="800" as="sourcePoint" />
+            <mxPoint x="170" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="external-container" value="Layanan Eksternal" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;fontStyle=1;fontSize=12;verticalAlign=top;align=left;spacingLeft=10;" parent="1" vertex="1">
+          <mxGeometry x="720" y="500" width="760" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="pinecone" value="Vector DB (Pinecone)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontSize=14;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="760" y="660" width="120" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="gemini" value="LLM (Google Gemini)" style="shape=cloud;whiteSpace=wrap;html=1;fontSize=14;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="1040" y="680" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow-m3-pinecone" value="7. Query Vektor" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" parent="1" source="model3-box" target="pinecone" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="690" y="740" as="sourcePoint" />
+            <mxPoint x="750" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow-pinecone-m3" value="8. Konteks Relevan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="pinecone" target="model3-box" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="750" y="700" as="sourcePoint" />
+            <mxPoint x="690" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow-m3-gemini" value="9. Augmented Prompt" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="model3-box" target="gemini" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="690" y="700" as="sourcePoint" />
+            <mxPoint x="1030" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow-gemini-m3" value="10. Jawaban Generatif" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="gemini" target="model3-box" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1030" y="740" as="sourcePoint" />
+            <mxPoint x="690" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
